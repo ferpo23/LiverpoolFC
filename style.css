@@ -19,9 +19,7 @@ body {
 /* ---------- HEADER ---------- */
 
 header {
-    position: fixed;
     width: 100%;
-    top: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -29,7 +27,6 @@ header {
 .logo {
     width: 200px;
     height: 200px;
-    margin: auto auto;
 }
 
 .nav-bar{
@@ -55,10 +52,6 @@ li, a {
 
 /* ---------- MAIN ---------- */
 
-.main-container {
-    margin-top: 200px;
-}
-
 .position {
     display: flex;
     justify-content: center;
@@ -69,7 +62,6 @@ h1 {
     color: white;
     font-size: 50px;
     text-decoration: underline;
-    margin: 20px;
     font-family: 'Cormorant Garamond', serif;
 }
 
