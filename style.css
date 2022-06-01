@@ -13,15 +13,13 @@
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
 /* ---------- HEADER ---------- */
 
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    margin: 50px;
 }
 
 .logo {
@@ -29,12 +27,7 @@ header {
     height: 200px;
 }
 
-.nav-bar{
-    display: flex;
-    align-items: center;
-}
-
-.nav-bar-list {
+.navbar {
     list-style: none;
     display: flex;
     justify-content:space-around;
@@ -59,9 +52,8 @@ li, a {
 }
 
 h1 {
-    color: white;
+    color: black;
     font-size: 50px;
-    text-decoration: underline;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -78,24 +70,24 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: black;
     font-size: 35px;
     margin: 30px;
     font-family: 'M PLUS 1p', sans-serif;
 }
 
 p {
-    width: 99%;
+    width: 60%;
     margin: 10px;
     padding: 10px;
     color: red;
-    font-size: 30px;
+    font-size: 1rem;
     font-family: 'Inconsolata', monospace;
 }
 
 .mapa {
-    width: 99%;
-    height: 500px;
+    width: 60%;
+    height: 400px;
     margin: 10px;
     padding: 10px;
 }
