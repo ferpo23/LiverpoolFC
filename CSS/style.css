@@ -35,15 +35,12 @@ header {
 }
 
 li, a {
-    color: red;
     font-size: 40px;
     text-decoration: none;
     margin: 40px;
 }
 
 /* ---------- FIN HEADER ---------- */
-
-/* ---------- MAIN ---------- */
 
 .position {
     display: flex;
@@ -58,15 +55,9 @@ h1 {
 }
 
 .youtube {
-    padding: 5px;
-    width: 400px;
+    margin: 25px;
+    width: 50%;
     height: 400px;
-}
-
-.position-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
 }
 
 h2 {
@@ -97,31 +88,6 @@ p {
   margin: 10px;
 }
 
-/*--------- HTML INDEX --------- */
-
-.videosyout {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-
-}
-
-.videosyout-uno { 
-    grid-area: 1 / 1 / 2 / 2; 
-}
-
-.videosyout-dos {
-     grid-area: 1 / 2 / 2 / 3; 
-}
-
-.videosyout-tres { 
-    grid-area: 1 / 3 / 2 / 4; 
-}
-
-/* --------- FIN HTML INDEX --------- */
-
 /* ---------- HTML PLANTEL --------- */
 
 .jugadores {
@@ -149,40 +115,6 @@ grid-row-gap: 0px;
 
 /* ---------- FIN HTML PLANTEL ---------- */
 
-/* --------- HTML FIXTURE --------- */
-
-.tabla {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 0.5fr 2fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.tabla-uno {
-    display: flex;
-    justify-content: center;
-}
-
-/* ---------- FIN HTML FIXTURE ---------- */
-
-/* ------------ HTML POSICIONES ---------- */
-
-.ubicaciones {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 0.5fr 2fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-    
-.ubicaciones-uno {
-display: flex;
-justify-content: center;
-}
-
-/* ---------- FIN HTML POSICIONES*/
-    
 /* ---------- HTML TITULOS ---------- */
 
 .copas {
@@ -201,8 +133,9 @@ display: grid;
 grid-template-columns: 1fr 2fr;
 grid-template-rows: repeat(8, 1fr);
 grid-column-gap: 0px;
-grid-row-gap: 0px;
+grid-row-gap: 0px; 
 }
+
 
 .premier {
     grid-area: 1 / 1 / 2 / 2;
@@ -302,8 +235,6 @@ grid-row-gap: 0px;
 
 /* ---------- FIN HTML TITULOS ---------- */
 
-/* ---------- FIN MAIN ---------- */
-
 /* ---------- FOOTER ---------- */
 
 footer {
@@ -325,3 +256,81 @@ footer {
 }
 
 /* ---------- FIN FOOTER ----------*/
+
+/* ---------- Medias ---------- */
+
+@media screen and (max-width: 576px) { 
+   .borrado {
+       display: none;
+   }
+
+   .jugadores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .jugadores-uno { grid-area: 1 / 1 / 2 / 2;}
+    .jugadores-dos { grid-area: 2 / 1 / 3 / 2; }
+    .jugadores-tres { grid-area: 3 / 1 / 4 / 2; }
+    .jugadores-cuatro { grid-area: 4 / 1 / 5 / 2; }
+
+    .player {
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    }
+
+    .position1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jugadores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+        
+    .jugadores-uno { grid-area: 1 / 1 / 2 / 2;}
+    .jugadores-dos { grid-area: 2 / 1 / 3 / 2; }
+    .jugadores-tres { grid-area: 3 / 1 / 4 / 2; }
+    .jugadores-cuatro { grid-area: 4 / 1 / 5 / 2;}
+
+    .position1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .jugadores {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+            
+        .jugadores-uno { grid-area: 1 / 1 / 2 / 2;}
+        .jugadores-dos { grid-area: 2 / 1 / 3 / 2; }
+        .jugadores-tres { grid-area: 3 / 1 / 4 / 2; }
+        .jugadores-cuatro { grid-area: 4 / 1 / 5 / 2;}
+    
+        .position1 {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        }
+    }
+    
+
+   
