@@ -30,11 +30,12 @@ header {
 .navbar {
     list-style: none;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     font-family: 'Koulen', cursive;
 }
 
-li, a {
+li,
+a {
     font-size: 40px;
     text-decoration: none;
     margin: 40px;
@@ -45,7 +46,7 @@ li, a {
 .position {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 h1 {
@@ -84,33 +85,34 @@ p {
 }
 
 .img {
-  border: 5px solid darkred;
-  margin: 10px;
+    border: 5px solid darkred;
+    margin: 10px;
 }
 
 /* ---------- HTML PLANTEL --------- */
 
 .jugadores {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-.jugadores-uno { 
-    grid-area: 1 / 1 / 2 / 2; 
+.jugadores-uno {
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-.jugadores-dos { 
-    grid-area: 1 / 2 / 2 / 3; 
+.jugadores-dos {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
-.jugadores-tres { 
-    grid-area: 2 / 1 / 3 / 2; 
+.jugadores-tres {
+    grid-area: 2 / 1 / 3 / 2;
 }
-.jugadores-cuatro { 
-    grid-area: 2 / 2 / 3 / 3; 
+
+.jugadores-cuatro {
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 /* ---------- FIN HTML PLANTEL ---------- */
@@ -129,11 +131,11 @@ grid-row-gap: 0px;
 }
 
 .titulos {
-display: grid;
-grid-template-columns: 1fr 2fr;
-grid-template-rows: repeat(8, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px; 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 
@@ -259,55 +261,77 @@ footer {
 
 /* ---------- Medias ---------- */
 
-@media screen and (max-width: 576px) { 
-   .borrado {
-       display: none;
-   }
-
-   .jugadores {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+@media screen and (max-width: 576px) {
+    .borrado {
+        display: none;
     }
-    
-    .jugadores-uno { grid-area: 1 / 1 / 2 / 2;}
-    .jugadores-dos { grid-area: 2 / 1 / 3 / 2; }
-    .jugadores-tres { grid-area: 3 / 1 / 4 / 2; }
-    .jugadores-cuatro { grid-area: 4 / 1 / 5 / 2; }
+
+    .jugadores {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .jugadores-uno {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .jugadores-dos {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .jugadores-tres {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .jugadores-cuatro {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 
     .player {
-    width: 90%;
-    height: 300px;
-    margin: 10px;
+        width: 90%;
+        height: 300px;
+        margin: 10px;
     }
 
     .position1 {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @media screen and (max-width: 768px) {
     .jugadores {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
-        
-    .jugadores-uno { grid-area: 1 / 1 / 2 / 2;}
-    .jugadores-dos { grid-area: 2 / 1 / 3 / 2; }
-    .jugadores-tres { grid-area: 3 / 1 / 4 / 2; }
-    .jugadores-cuatro { grid-area: 4 / 1 / 5 / 2;}
+
+    .jugadores-uno {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .jugadores-dos {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .jugadores-tres {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .jugadores-cuatro {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 
     .position1 {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -318,19 +342,27 @@ footer {
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        }
-            
-        .jugadores-uno { grid-area: 1 / 1 / 2 / 2;}
-        .jugadores-dos { grid-area: 2 / 1 / 3 / 2; }
-        .jugadores-tres { grid-area: 3 / 1 / 4 / 2; }
-        .jugadores-cuatro { grid-area: 4 / 1 / 5 / 2;}
-    
-        .position1 {
+    }
+
+    .jugadores-uno {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .jugadores-dos {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .jugadores-tres {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .jugadores-cuatro {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .position1 {
         display: flex;
         justify-content: center;
-        align-items: center; 
-        }
+        align-items: center;
     }
-    
-
-   
+}
