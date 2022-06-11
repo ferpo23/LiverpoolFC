@@ -1,495 +1,404 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: grey;
-}
-
-/* ---------- HEADER ---------- */
-
-header {
-    margin: 60px;
-}
-
-.logo {
-    width: 200px;
-    height: 200px;
-}
-
-.navbar {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Koulen', cursive;
-}
-
-li,
-a {
-    font-size: 40px;
-    text-decoration: none;
-    margin: 40px;
-}
-
-/* ---------- FIN HEADER ---------- */
-
-.position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    color: black;
-    font-size: 50px;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.youtube {
-    margin: 25px;
-    width: 50%;
-    height: 400px;
-}
-
-h2 {
-    color: black;
-    font-size: 35px;
-    font-family: 'M PLUS 1p', sans-serif;
-}
-
-p {
-    width: 60%;
-    margin: 10px;
-    padding: 10px;
-    color: darkred;
-    font-size: 1.5rem;
-    font-family: 'Inconsolata', monospace;
-}
-
-.mapa {
-    width: 60%;
-    height: 400px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.img {
-    border: 5px solid darkred;
-    margin: 10px;
-}
-
-/* ---------- HTML PLANTEL --------- */
-
-.jugadores {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.jugadores-uno {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.jugadores-dos {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.jugadores-tres {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.jugadores-cuatro {
-    grid-area: 2 / 2 / 3 / 3;
-}
-
-/* ---------- FIN HTML PLANTEL ---------- */
-
-/* ---------- HTML TITULOS ---------- */
-
-.copas {
-    width: 250px;
-    height: 250px;
-    transition-property: all;
-    transition-duration: 2s;
-}
-
-.copas:hover {
-    transform: scale(1.2);
-}
-
-.titulos {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-
-.premier {
-    grid-area: 1 / 1 / 2 / 2;
-    padding-left: 20px;
-}
-
-.premier-dos {
-    grid-area: 1 / 2 / 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.champions {
-    grid-area: 2 / 1 / 3 / 2;
-    padding-left: 20px;
-}
-
-.champions-dos {
-    grid-area: 2 / 2 / 3 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.facup {
-    grid-area: 3 / 1 / 4 / 2;
-    padding-left: 20px;
-}
-
-.facup-dos {
-    grid-area: 3 / 2 / 4 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carabao {
-    grid-area: 4 / 1 / 5 / 2;
-    padding-left: 20px;
-}
-
-.carabao-dos {
-    grid-area: 4 / 2 / 5 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.europa {
-    grid-area: 5 / 1 / 6 / 2;
-    padding-left: 20px;
-}
-
-.europa-dos {
-    grid-area: 5 / 2 / 6 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.community {
-    grid-area: 6 / 1 / 7 / 2;
-    padding-left: 20px;
-}
-
-.community-dos {
-    grid-area: 6 / 2 / 7 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.uefa {
-    grid-area: 7 / 1 / 8 / 2;
-    padding-left: 20px;
-}
-
-.uefa-dos {
-    grid-area: 7 / 2 / 8 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fifa {
-    grid-area: 8 / 1 / 9 / 2;
-    padding-left: 20px;
-}
-
-.fifa-dos {
-    grid-area: 8 / 2 / 9 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ---------- FIN HTML TITULOS ---------- */
-
-/* ---------- FOOTER ---------- */
-
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 footer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
 }
-
-.redes {
-    width: 80px;
-    height: 80px;
-    transition-property: all;
-    transition-duration: 2s;
-    border-radius: 50%;
+footer .redes {
+  width: 60px;
+  height: 60px;
+  transition-property: all;
+  transition-duration: 2s;
+  border-radius: 50%;
 }
 
 .redes:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
-/* ---------- FIN FOOTER ----------*/
+header {
+  margin: 60px;
+}
+header .logo {
+  width: 200px;
+  height: 200px;
+}
+header .navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Koulen", cursive;
+}
+header li, header a {
+  font-size: 40px;
+  text-decoration: none;
+  margin: 40px;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.position h1 {
+  color: black;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
+.position .youtube {
+  margin: 25px;
+  width: 50%;
+  height: 400px;
+}
+.position h2 {
+  color: black;
+  font-size: 35px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.position p {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  color: darkred;
+  font-size: 1.5rem;
+  font-family: "Inconsolata", monospace;
+}
+.position .mapa {
+  width: 60%;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+}
+.position .img {
+  border: 5px solid darkred;
+  margin: 10px;
+}
+
+.jugadores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.jugadores .jugadores-uno {
+  grid-area: 1/1/2/2;
+}
+.jugadores .jugadores-dos {
+  grid-area: 1/2/2/3;
+}
+.jugadores .jugadores-tres {
+  grid-area: 2/1/3/2;
+}
+.jugadores .jugadores-cuatro {
+  grid-area: 2/2/3/3;
+}
+
+.copas {
+  width: 250px;
+  height: 250px;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.copas:hover {
+  transform: scale(1.2);
+}
+
+.titulos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.titulos .premier {
+  grid-area: 1/1/2/2;
+  padding-left: 20px;
+}
+.titulos .premier-dos {
+  grid-area: 1/2/2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos .champions {
+  grid-area: 2/1/3/2;
+  padding-left: 20px;
+}
+.titulos .champions-dos {
+  grid-area: 2/2/3/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos .facup {
+  grid-area: 3/1/4/2;
+  padding-left: 20px;
+}
+.titulos .facup-dos {
+  grid-area: 3/2/4/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos .carabao {
+  grid-area: 4/1/5/2;
+  padding-left: 20px;
+}
+.titulos .carabao-dos {
+  grid-area: 4/2/5/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos .europa {
+  grid-area: 5/1/6/2;
+  padding-left: 20px;
+}
+.titulos .europa-dos {
+  grid-area: 5/2/6/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos .community {
+  grid-area: 6/1/7/2;
+  padding-left: 20px;
+}
+.titulos .community-dos {
+  grid-area: 6/2/7/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos .uefa {
+  grid-area: 7/1/8/2;
+  padding-left: 20px;
+}
+.titulos .uefa-dos {
+  grid-area: 7/2/8/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulos .fifa {
+  grid-area: 8/1/9/2;
+  padding-left: 20px;
+}
+.titulos .fifa-dos {
+  grid-area: 8/2/9/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* body {
+  background-color: grey;
+}
 
 /* ---------- Medias ---------- */
-
-@media screen and (max-width: 576px) {
-
-    header {
-        margin: 100px;
-    }
-
-    h1 {
-        color: black;
-        font-size: 35px;
-        font-family: 'Cormorant Garamond', serif;
-    }
-
-    h2 {
-        color: black;
-        font-size: 25px;
-        font-family: 'M PLUS 1p', sans-serif;
-    }
-
-    .borrado {
-        display: none;
-    }
-
-    .jugadores {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-
-    .jugadores-uno {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .jugadores-dos {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .jugadores-tres {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-
-    .jugadores-cuatro {
-        grid-area: 4 / 1 / 5 / 2;
-    }
-
-    .player {
-        width: 90%;
-        height: 300px;
-        margin: 10px;
-    }
-
-
-
-    .position1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .titulos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-
-    .premier {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .champions {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .facup {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-
-    .carabao {
-        grid-area: 4 / 1 / 5 / 2;
-    }
-
-    .europa {
-        grid-area: 5 / 1 / 6 / 2;
-    }
-
-    .community {
-        grid-area: 6 / 1 / 7 / 2;
-    }
-
-    .uefa {
-        grid-area: 7 / 1 / 8 / 2;
-    }
-
-    .fifa {
-        grid-area: 8 / 1 / 9 / 2;
-    }
-
-    li,
-    a {
-        font-size: 20px;
-        text-decoration: none;
-        margin: 0px;
-    }
+@media screen and (max-width: 420px) {
+  header {
+    margin: 100px;
+  }
+  header li,
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px;
+  }
+  header h1 {
+    color: black;
+    font-size: 35px;
+    font-family: "Cormorant Garamond", serif;
+  }
+  header h2 {
+    color: black;
+    font-size: 25px;
+    font-family: "M PLUS 1p", sans-serif;
+  }
+  .player {
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+  }
+  .player1 {
+    width: 100%;
+    height: 400px;
+    margin: 5px;
+  }
+  .position1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .borrado {
+    display: none;
+  }
+  .jugadores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .jugadores .jugadores-uno {
+    grid-area: 1/1/2/2;
+  }
+  .jugadores .jugadores-dos {
+    grid-area: 2/1/3/2;
+  }
+  .jugadores .jugadores-tres {
+    grid-area: 3/1/4/2;
+  }
+  .jugadores .jugadores-cuatro {
+    grid-area: 4/1/5/2;
+  }
+  .titulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .titulos .premier {
+    grid-area: 1/1/2/2;
+  }
+  .titulos .champions {
+    grid-area: 2/1/3/2;
+  }
+  .titulos .facup {
+    grid-area: 3/1/4/2;
+  }
+  .titulos .carabao {
+    grid-area: 4/1/5/2;
+  }
+  .titulos .europa {
+    grid-area: 5/1/6/2;
+  }
+  .titulos .community {
+    grid-area: 6/1/7/2;
+  }
+  .titulos .uefa {
+    grid-area: 7/1/8/2;
+  }
+  .titulos .fifa {
+    grid-area: 8/1/9/2;
+  }
 }
-
-@media screen and (max-width: 800px) {
-
-    .jugadores {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-
-    .jugadores-uno {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .jugadores-dos {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .jugadores-tres {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-
-    .jugadores-cuatro {
-        grid-area: 4 / 1 / 5 / 2;
-    }
-
-    .position1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    li,
-    a {
-        font-size: 20px;
-        text-decoration: none;
-        margin: 0px;
-    }
-
-    .player {
-        width: 90%;
-        height: 300px;
-        margin: 10px;
-    }
-
-    .titulos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-
-    .premier {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .champions {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .facup {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-
-    .carabao {
-        grid-area: 4 / 1 / 5 / 2;
-    }
-
-    .europa {
-        grid-area: 5 / 1 / 6 / 2;
-    }
-
-    .community {
-        grid-area: 6 / 1 / 7 / 2;
-    }
-
-    .uefa {
-        grid-area: 7 / 1 / 8 / 2;
-    }
-
-    .fifa {
-        grid-area: 8 / 1 / 9 / 2;
-    }
-
+@media screen and (max-width: 900px) {
+  header {
+    margin: 100px;
+  }
+  header li,
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px;
+  }
+  .position1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .player {
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+  }
+  .jugadores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .jugadores .jugadores-uno {
+    grid-area: 1/1/2/2;
+  }
+  .jugadores .jugadores-dos {
+    grid-area: 2/1/3/2;
+  }
+  .jugadores .jugadores-tres {
+    grid-area: 3/1/4/2;
+  }
+  .jugadores .jugadores-cuatro {
+    grid-area: 4/1/5/2;
+  }
+  .titulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .titulos .premier {
+    grid-area: 1/1/2/2;
+  }
+  .titulos .champions {
+    grid-area: 2/1/3/2;
+  }
+  .titulos .facup {
+    grid-area: 3/1/4/2;
+  }
+  .titulos .carabao {
+    grid-area: 4/1/5/2;
+  }
+  .titulos .europa {
+    grid-area: 5/1/6/2;
+  }
+  .titulos .community {
+    grid-area: 6/1/7/2;
+  }
+  .titulos .uefa {
+    grid-area: 7/1/8/2;
+  }
+  .titulos .fifa {
+    grid-area: 8/1/9/2;
+  }
 }
-
 @media screen and (max-width: 1100px) {
-    .jugadores {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-
-    .jugadores-uno {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .jugadores-dos {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .jugadores-tres {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-
-    .jugadores-cuatro {
-        grid-area: 4 / 1 / 5 / 2;
-    }
-
-    .position1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    li,
-    a {
-        font-size: 20px;
-        text-decoration: none;
-        margin: 0px;
-    }
+  header li,
+header a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px;
+  }
+  .jugadores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .jugadores .jugadores-uno {
+    grid-area: 1/1/2/2;
+  }
+  .jugadores .jugadores-dos {
+    grid-area: 2/1/3/2;
+  }
+  .jugadores .jugadores-tres {
+    grid-area: 3/1/4/2;
+  }
+  .jugadores .jugadores-cuatro {
+    grid-area: 4/1/5/2;
+  }
+  .position1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

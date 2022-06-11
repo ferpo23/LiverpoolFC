@@ -1,0 +1,24 @@
+@import '../base/listas';
+
+.jugadores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: nth($medidas, 1);
+    grid-row-gap: nth($medidas, 1);
+    .jugadores-uno {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .jugadores-dos {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .jugadores-tres {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .jugadores-cuatro {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
