@@ -1,0 +1,40 @@
+@import '../base/listas';
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: nth($colores, 2);
+        font-size: nth($medidas, 9);
+        font-family: 'Cormorant Garamond', serif;
+    }
+    .youtube {
+        margin: nth($medidas, 5);
+        width: nth($porcentajes, 3);
+        height: nth($medidas, 16);
+    }
+    h2 {
+        color: nth($colores, 2);
+        font-size: nth($medidas, 7);
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+    p {
+        width: nth($porcentajes, 4);
+        margin: nth($medidas, 3);
+        padding: nth($medidas, 3);
+        color: nth($colores, 1);
+        font-size: 1.5rem;
+        font-family: 'Inconsolata', monospace;
+    }
+    .mapa {
+        width: nth($porcentajes, 4);
+        height: nth($medidas, 16);
+        margin: nth($medidas, 3);
+        padding: nth($medidas, 3);
+    }
+    .img {
+        border: 5px solid darkred;
+        margin: nth($medidas, 3);
+    }
+}
