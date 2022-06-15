@@ -1,14 +1,16 @@
 @import '../base/listas';
+@import '../base/extends';
+@import '../base/mixins';
 
 .copas {
-    width: nth($medidas, 15);
-    height: nth($medidas, 15);
+    @include varios(200px, 200px);
     transition-property: all;
-    transition-duration: 2s;
+    transition-duration: 1s;
+    @extend %marpad;
 }
 
 .copas:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .titulos {
@@ -24,9 +26,7 @@
     
     .premier-dos {
         grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
     
     .champions {
@@ -36,9 +36,7 @@
     
     .champions-dos {
         grid-area: 2 / 2 / 3 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
     
     .facup {
@@ -48,9 +46,7 @@
     
     .facup-dos {
         grid-area: 3 / 2 / 4 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
     
     .carabao {
@@ -60,9 +56,7 @@
     
     .carabao-dos {
         grid-area: 4 / 2 / 5 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
     
     .europa {
@@ -72,9 +66,7 @@
     
     .europa-dos {
         grid-area: 5 / 2 / 6 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
     
     .community {
@@ -84,9 +76,7 @@
     
     .community-dos {
         grid-area: 6 / 2 / 7 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
     
     .uefa {
@@ -96,9 +86,7 @@
     
     .uefa-dos {
         grid-area: 7 / 2 / 8 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
     
     .fifa {
@@ -108,8 +96,6 @@
     
     .fifa-dos {
         grid-area: 8 / 2 / 9 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %posiciones;
     }
 }
