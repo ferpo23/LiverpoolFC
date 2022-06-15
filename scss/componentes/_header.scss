@@ -1,10 +1,10 @@
 @import "../base/listas";
+@import "../base/mixins";
 
 header {
     margin: nth($medidas, 10);
     .logo {
-        width: nth($medidas, 14);
-        height: nth($medidas, 14);
+        @include varios(200px, 200px);
     }
     .navbar {
         list-style: none;

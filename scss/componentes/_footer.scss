@@ -1,14 +1,15 @@
 @import '../base/listas';
+@import '../base/extends';
+@import '../base/mixins';
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    margin: nth($medidas, 4);
-    padding: nth($medidas, 4);
+    @extend %marpad;
+    
     .redes {
-        width: nth($medidas, 10);
-        height: nth($medidas, 10);
+        @include varios(60px, 60px);
         transition-property: all;
         transition-duration: 2s;
         border-radius: nth($porcentajes, 3);

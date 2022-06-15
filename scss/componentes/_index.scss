@@ -1,9 +1,8 @@
 @import '../base/listas';
+@import '../base/extends';
 
 .position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %posiciones;
     h1 {
         color: nth($colores, 2);
         font-size: nth($medidas, 9);
@@ -21,8 +20,7 @@
     }
     p {
         width: nth($porcentajes, 4);
-        margin: nth($medidas, 3);
-        padding: nth($medidas, 3);
+        @extend %marpad;
         color: nth($colores, 1);
         font-size: 1.5rem;
         font-family: 'Inconsolata', monospace;
@@ -30,11 +28,10 @@
     .mapa {
         width: nth($porcentajes, 4);
         height: nth($medidas, 16);
-        margin: nth($medidas, 3);
-        padding: nth($medidas, 3);
+        @extend %marpad;
     }
     .img {
         border: 5px solid darkred;
-        margin: nth($medidas, 3);
+        @extend %marpad;
     }
 }
